@@ -3,7 +3,7 @@
 $title_page = 'Projects';
 $description_page = 'Present and Future Masterplan Projects';
 $single_page = true;
-include('header.php');
+include('inc_header.php');
 ?>
 <!-- page content -->
 <section class="page portfolio-page-wrapper">              
@@ -146,4 +146,4 @@ include('header.php');
     <!-- end container -->
 </section>
 <!-- end page content -->
-<?php include('footer.php');?>
+<?php include('inc_footer.php');?>

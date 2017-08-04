@@ -3,7 +3,7 @@
 $title_page = 'History';
 $description_page = 'We are born from a history';
 $single_page = true;
-include('header.php');
+include('inc_header.php');
 ?>
 <!-- page content -->
 <section class="page">            
@@ -149,4 +149,4 @@ include('header.php');
 	<!-- end container -->
 </section>
 <!-- end skills section -->
-<?php include('footer.php');?>
+<?php include('inc_footer.php');?>

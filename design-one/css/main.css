@@ -542,10 +542,10 @@ footer .widget h4 {
 
   /* Header Slider */
   header .m-slider , header .teaser {
-    margin-top:20px;
+    margin-top:40px;
     width: 100%;
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
   }
 
   header .teaser {
@@ -2712,10 +2712,10 @@ footer .widget h4 {
 
   /* home slider */
    .m-slider.flexslider .flex-direction-nav  {
-    top: 30%;
+    top: 50%;
    }
   .m-slider.flexslider .flex-direction-nav .flex-next  { right:0px; background: url(../img/slider_right.png) no-repeat !important; }
-  .m-slider.flexslider .flex-direction-nav .flex-prev {  left:0px; background: url(../img/slider_left.png) no-repeat !important; }
+  .m-slider.flexslider .flex-direction-nav .flex-prev {  left:-28px; background: url(../img/slider_left.png) no-repeat !important; }
 
   /* home portfolio */
    .home-portfolio-pagination .prev {
@@ -3166,6 +3166,36 @@ footer .widget h4 {
       }
     .home-portfolio-pagination {
       top: 180px;
+    }
+
+    .home-slider .slide {
+      height:auto;
+    }
+    
+    .home-slider .slide p {
+      width: 60%;
+    }
+
+    header .m-slider p, header .teaser p {
+      font-size: 1.1em;
+      font-weight: 400;
+    }
+    header .m-slider .slide h2, header .teaser h2 {
+      font-size:1.3em;
+      margin-bottom: 10px;
+      margin-top: -15px;
+      padding: 0
+    }
+    header .m-slider .slide > a {
+      top:10px;
+      background: none;
+      border: 0;
+      padding: 0;
+      z-index: 15;
+    }
+    .m-slider.flexslider .flex-direction-nav a {
+      /*width: 40px;*/
+      /*height: 40px;*/
     }
 }
 

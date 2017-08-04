@@ -1,5 +1,5 @@
 <?php 
-include('header.php');
+include('inc_header.php');
 ?>
 <!-- portfolio -->
 <section class="portfolio-wrapper alt-section">
@@ -72,7 +72,7 @@ include('header.php');
             <!-- section title -->
             <div class="section-title span12">
                 <h2>Latest Entries</h2>
-                <a href="blog.html" class="section-link">Go to blog</a>
+                <a href="blog.html" class="section-link">Go to articles</a>
             </div>
             <!-- end section title -->
             <!-- content / blog -->
@@ -152,4 +152,4 @@ include('header.php');
     <!-- end container -->
 </section>
 <!-- end page content -->
-<?php include('footer.php');?>
+<?php include('inc_footer.php');?>

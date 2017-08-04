@@ -6,7 +6,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <title>Mocha Flat Responsive Portfolio</title>
+    <title>Simpang Susun Semanggi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Simpang Susun Semanggi">
     <meta name="author" content="Simpang Susun Semanggi">
@@ -67,7 +67,7 @@
             </div>
             <!-- end row 1-->
             <?php            
-                include('slider.php');
+                include('inc_slider.php');
             ?>
     </div>
     <!-- end container -->

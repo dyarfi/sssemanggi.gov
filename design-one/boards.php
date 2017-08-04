@@ -2,7 +2,7 @@
 $title_page = 'Boards of Directors';
 $description_page = 'We dedicated ourselves to a better Jakarta';
 $single_page = true;
-include('header.php');
+include('inc_header.php');
 ?>
 <!-- portfolio -->
 <section class="portfolio-wrapper alt-section">
@@ -80,118 +80,74 @@ include('header.php');
             <!-- end section title -->
             <!-- content / blog -->
             <div class="content-wrapper blog-grid">
-                    <div class="span4 blog-item">
-                                <!-- post image -->
-                                <div class="post-image">
-                                    <!-- image -->
-                                    <a href="single.html" class="image">
-                                        <img src="img/demo/blog1.png" alt="Post Title">
-                                    </a>
-                                    <!-- end image -->
-
-
-                                    <!-- icon -->
-                                    <a href="single.html" class="icon"></a>
-
-                                </div>
-                                <!-- end post image -->
-
-
-                                <!-- post excerpt -->
-                                <div class="post-excerpt">
-
-                                        <h4><a href="single.html">Duis sed odio sit amet auctor
-                                            nibh vulputate.</a></h4>
-
-                                            <p>
-                                                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec dio tincidunt auctor ornare odio.
-                                            </p>
-
-                                </div>
-                                <!-- end post excerpt -->
-
-
+                <div class="span4 blog-item">
+                    <!-- post image -->
+                    <div class="post-image">
+                        <!-- image -->
+                        <a href="single.html" class="image">
+                            <img src="img/demo/blog1.png" alt="Post Title">
+                        </a>
+                        <!-- end image -->
+                        <!-- icon -->
+                        <a href="single.html" class="icon"></a>
                     </div>
-                    <!-- end blog item -->
+                    <!-- end post image -->
+                    <!-- post excerpt -->
+                    <div class="post-excerpt">
 
-
-
-
-
-                    <div class="span4 blog-item">
-
-
-                                <!-- post image -->
-                                <div class="post-image">
-
-                                    <!-- image -->
-                                    <a href="single.html" class="image">
-                                        <img src="img/demo/blog2.png" alt="Post Title">
-                                    </a>
-                                    <!-- end image -->
-
-
-                                    <!-- icon -->
-                                    <a href="single.html" class="icon"></a>
-
-                                </div>
-                                <!-- end post image -->
-
-
-                                <!-- post excerpt -->
-                                <div class="post-excerpt">
-
-                                        <h4><a href="single.html">Vulputate cursus a sit amet mauris odio.</a></h4>
-
-                                            <p>
-                                                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi accumsan ipsum velit.
-                                            </p>
-
-                                </div>
-                                <!-- end post excerpt -->
-
-
+                        <h4><a href="single.html">Duis sed odio sit amet auctor
+                            nibh vulputate.</a></h4>
+                        <p>
+                            Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec dio tincidunt auctor ornare odio.
+                        </p>
                     </div>
-                    <!-- end blog item -->
-
-
-
-
-                    <div class="span4 blog-item">
-
-
-                                <!-- post image -->
-                                <div class="post-image">
-
-                                    <!-- image -->
-                                    <a href="single.html" class="image">
-                                        <img src="img/demo/blog3.png" alt="Post Title">
-                                    </a>
-                                    <!-- end image -->
-
-
-                                    <!-- icon -->
-                                    <a href="single.html" class="icon"></a>
-
-                                </div>
-                                <!-- end post image -->
-
-
-                                <!-- post excerpt -->
-                                <div class="post-excerpt">
-
-                                        <h4><a href="single.html">Odio tincidunt auctor ornare amet accumsan.</a></h4>
-
-                                            <p>
-                                                    Proin gravida nibh vel velit auctor aliquet. Aenean solcitudin lorem bibendum auctor, nisi elit conec sagittis sem nibh id elit.
-                                            </p>
-
-                                </div>
-                                <!-- end post excerpt -->
-
-
+                    <!-- end post excerpt -->
+                </div>
+                <!-- end blog item -->
+                <div class="span4 blog-item">
+                    <!-- post image -->
+                    <div class="post-image">
+                        <!-- image -->
+                        <a href="single.html" class="image">
+                            <img src="img/demo/blog2.png" alt="Post Title">
+                        </a>
+                        <!-- end image -->
+                        <!-- icon -->
+                        <a href="single.html" class="icon"></a>
                     </div>
-                    <!-- end blog item -->
+                    <!-- end post image -->
+                    <!-- post excerpt -->
+                    <div class="post-excerpt">
+                        <h4><a href="single.html">Vulputate cursus a sit amet mauris odio.</a></h4>
+                        <p>
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi accumsan ipsum velit.
+                        </p>
+                    </div>
+                    <!-- end post excerpt -->
+                </div>
+                <!-- end blog item -->
+                <div class="span4 blog-item">
+                    <!-- post image -->
+                    <div class="post-image">
+                        <!-- image -->
+                        <a href="single.html" class="image">
+                            <img src="img/demo/blog3.png" alt="Post Title">
+                        </a>
+                        <!-- end image -->
+                        <!-- icon -->
+                        <a href="single.html" class="icon"></a>
+                    </div>
+                    <!-- end post image -->
+                    <!-- post excerpt -->
+                    <div class="post-excerpt">
+                        <h4><a href="single.html">Odio tincidunt auctor ornare amet accumsan.</a></h4>
+                        <p>
+                            Proin gravida nibh vel velit auctor aliquet. Aenean solcitudin lorem bibendum auctor, nisi elit conec sagittis sem nibh id elit.
+                        </p>
+                    </div>
+                    <!-- end post excerpt -->
+                </div>
+                <!-- end blog item -->
             </div>
             <!-- end content wrapper -->
         </div>
@@ -200,4 +156,4 @@ include('header.php');
     <!-- end container -->
 </section>
 <!-- end page content -->
-<?php include('footer.php');?>
+<?php include('inc_footer.php');?>

@@ -11140,8 +11140,19 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 
 /* Heading Block - with Subtitle
 -----------------------------------------------------------------*/
-
-.heading-block { margin-bottom: 50px; }
+.flexslider-block {
+	width:90%; 
+	margin:0px auto 40px auto; 
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:-170px;
+	/*bottom:220px;*/
+	clear:both;
+}
+.heading-block { 
+	margin-bottom: 50px; 	
+}
 
 .heading-block h1,
 .heading-block h2,
