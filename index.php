@@ -678,7 +678,7 @@
 
 		<section id="slider" class="slider-parallax swiper_wrapper dark error404-wrap">
 			<div class="slider-parallax-inner">
-				<!--div class="container vertical-middle center clearfix">
+				<div class="container vertical-middle center clearfix">
 					<div class="error404">404</div>
 					<div class="heading-block nobottomborder">
 						<h4>Ooopps.! The Page you were looking for, couldn't be found.</h4>
@@ -692,8 +692,8 @@
 							</span>
 						</div>
 					</form>
-				</div-->
-				<div class="swiper-container swiper-parent">
+				</div>
+				<!--div class="swiper-container swiper-parent">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide" style="background-image: url('images/slider/boxed/2.jpg');">
 							<div class="container clearfix">
@@ -730,13 +730,15 @@
 					</div>
 					<div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
 					<div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
-				</div>
+				</div-->
 				<div class="video-wrap">
-					<img src="images/buildings/building1.jpg"/>
-					<!--video poster="images/videos/explore.jpg" preload="auto" loop autoplay muted>
-						<source src='images/videos/explore.mp4' type='video/mp4' />
-						<source src='images/videos/explore.webm' type='video/webm' />
-					</video-->
+					<!-- <img src="images/buildings/building1.jpg"/> -->
+					<video poster="images/buildings/building1.jpg" preload="auto" loop autoplay muted>
+						<!-- <source src='images/videos/explore.mp4' type='video/mp4' /> -->
+						<!-- <source src='images/videos/explore.webm' type='video/webm' /> -->
+						<source src='images/videos/semanggi.mp4' type='video/mp4' />
+						<source src='images/videos/semanggi.webm' type='video/webm' />
+					</video>
 					<div class="video-overlay" style="background-color: rgba(0,0,0,0.3);"></div>
 				</div>
 			</div>

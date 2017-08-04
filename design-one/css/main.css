@@ -333,27 +333,33 @@ section.alt-section h6 , section.alt-section h6 a , section.alt-section h6 span 
 }
 
 h1 , h1 a {
-    font-size: 46px;
+    /*font-size: 46px;*/
+    font-size: 2.6em
 }
 
 h2 , h2 a {
-    font-size: 38px;
+    /*font-size: 38px;*/
+    font-size: 2.3em
 }
 
 h3 , h3 a {
-    font-size: 32px;
+    /*font-size: 32px;*/
+    font-size: 1.5em
 }
 
 h4 , h4 a {
-    font-size: 24px;
+    /*font-size: 24px;*/
+    font-size: 1.4em
 }
 
 h5 , h5 a {
-    font-size: 18px;
+    /*font-size: 18px;*/
+    font-size: 1.0em
 }
 
 h6 , h6 a {
-    font-size: 16px;
+    /*font-size: 16px;*/
+    font-size: 1.0em
 }
 
 
@@ -402,8 +408,8 @@ footer .widget h4 {
   }
 
   header > .container {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 15px;
+    padding-bottom: 60px;
     position: relative;
     z-index: 1;
 
@@ -435,9 +441,9 @@ footer .widget h4 {
 
   header nav ul li:after {
     content: " / ";
-    font-weight: 700;
+    font-weight: 600;
     font-family: 'Lato' , sans-serif;
-    font-size: 24px;
+    font-size: 1.1em;
     margin-left: 10px;
   }
 
@@ -485,12 +491,12 @@ footer .widget h4 {
     padding: 0px;
     margin-bottom: 7px;
     text-align: left;
-    font-size: 18px !important;
+    font-size: 0.90em !important;
     line-height: 18px;
   }
 
   nav.menu ul ul li a {
-    font-size: 18px !important;
+    font-size: 0.99em !important;
     float: left;
     clear: both;
     width: 90%;
@@ -505,7 +511,7 @@ footer .widget h4 {
 
 
   header nav.menu ul li a {
-    font-size: 24px;
+    font-size: 0.98em;
     font-weight: 600;
     margin-bottom: -8px;
     padding-bottom: 8px;
@@ -535,11 +541,11 @@ footer .widget h4 {
   }
 
   /* Header Slider */
-  header .m-slider , header .teaser{
-    margin-top: 100px;
+  header .m-slider , header .teaser {
+    margin-top:20px;
     width: 100%;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
   }
 
   header .teaser {
@@ -555,6 +561,8 @@ footer .widget h4 {
   header .m-slider .slide h2 , header .teaser h2  {
     /*font-size: 72px;*/
     font-size: 2em;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     margin-bottom: 40px;
   }
 
@@ -563,16 +571,18 @@ footer .widget h4 {
   }
 
   header .m-slider p , header .teaser p {
-    font-size: 1.8em;
-    font-weight: 300;
+    font-size: 2.2em;
+    font-weight: 200;
     line-height: 1em;
     margin-bottom: 40px;
     text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   }
 
   header .teaser h2 {
     text-transform: uppercase;
-    font-size: 60px;
+    /*font-size: 60px;*/
+    font-size: 3em;
     line-height: 60px;
     font-weight: 800;
   }
@@ -587,8 +597,18 @@ footer .widget h4 {
 
     .home-slider .slide {
       width: 100%;
+      display: block;
+      
+      height: 400px;
+      padding: 30px 0px 20px 0px;
+
       float: left;
       clear: both;
+
+      position: relative;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      text-align: center;
     }
 
     .home-slider .m-slider{
@@ -597,16 +617,11 @@ footer .widget h4 {
         position: relative;
         width: 100%;
       }
-
-      .home-slider .slide {
-        position: relative;
-        border-radius: 4px;
-        -webkit-border-radius: 4px;
-        text-align: center;
-        float: left;
-        clear: both;
-        width: 100%;
-        /*max-height: 400px;*/
+      
+      .home-slider .slide p {
+        width: 80%;
+        margin: 0 auto; 
+        padding: 0px 40px;
       }
 
 
@@ -674,8 +689,8 @@ footer .widget h4 {
 
       }
 
-      .m-slider.flexslider .flex-direction-nav .flex-next  { right:-100px; background: url(../img/slider_right.png) no-repeat !important; }
-      .m-slider.flexslider .flex-direction-nav .flex-prev {  left:-130px; background: url(../img/slider_left.png) no-repeat !important; }
+      .m-slider.flexslider .flex-direction-nav .flex-next  { right:-48px; background: url(../img/slider_right.png) no-repeat !important; }
+      .m-slider.flexslider .flex-direction-nav .flex-prev {  left:-76px; background: url(../img/slider_left.png) no-repeat !important; }
 
       .m-slider.flexslider .flex-direction-nav .flex-next:hover  { background: url(../img/slider_right_hover.png) no-repeat !important; }
       .m-slider.flexslider .flex-direction-nav .flex-prev:hover {  background: url(../img/slider_left_hover.png) no-repeat !important; }
@@ -700,6 +715,9 @@ footer .widget h4 {
   header .m-slider .slide > a {
     border: 3px solid #fff;
     padding: 14px 35px;
+    top:60px;
+    position: relative;
+    background: rgba(0,0,0,0.5)
   }
   header .m-slider a:hover {
 
@@ -723,7 +741,7 @@ footer .widget h4 {
   }
 
   .section-title h2 {
-    font-size: 3.3em;
+    font-size: 2.3em;
     font-weight: 800;
     float: left;
     clear: both;
@@ -891,12 +909,12 @@ footer .widget h4 {
 
       .home-portfolio-pagination .prev {
         background-image: url(../img/portfolio_left.png);
-        left: -40px;
+        left: -5px;
       }
 
       .home-portfolio-pagination .next {
         background-image: url(../img/portfolio_right.png);
-        right: -100px;
+        right: -55px;
       }
 
       .home-portfolio-pagination .prev:hover {
@@ -2368,7 +2386,7 @@ footer .widget h4 {
     }
 
     section.skills  h2 {
-      font-size: 72px;
+      font-size: 3.0em;
       font-weight: 800;
       color: #fff;
       float: left;
@@ -2759,6 +2777,9 @@ footer .widget h4 {
    }
   .skills-wrapper {
     width: 100%;
+
+    /*height: 620px;*/
+
     float: left;
     clear: both;
   }
@@ -2779,7 +2800,9 @@ footer .widget h4 {
 
 @media (min-width: 768px) and (max-width: 979px) {
 
-
+  .skills-wrapper {
+    height: 600px;    
+  }
 
 }
 
