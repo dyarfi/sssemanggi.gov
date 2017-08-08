@@ -1,196 +1,204 @@
 <?php
-include('inc_header.php');
-?>
-<section id="slider" class="error404-wrap">
-	<div class="container vertical-middle center clearfix">		
-		<div class="flexslider-block">
-			<div class="flexslider">
-				<ul class="slides">
-				    <li>
-				      <img src="images/buildings/semanggi/lr/semanggi1.jpg" />
-				      	<div class="slider-caption slider-caption-center">
-							<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-							<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-						</div>
-				    </li>
-				    <li>
-				      <img src="images/buildings/semanggi/lr/semanggi2.jpg" />
-				      	<div class="slider-caption slider-caption-center">
-							<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-							<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-						</div>
-				    </li>
-				    <li>
-				      <img src="images/buildings/semanggi/lr/semanggi3.jpg" />
-				     	<div class="flex-captionslider-caption slider-caption-center">
-							<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-							<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-						</div>
-				    </li>
-				    <li>
-				      <img src="images/buildings/semanggi/lr/semanggi4.jpg" />
-				      <div class="slider-caption slider-caption-center">
-							<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-							<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-						</div>
-				    </li>
-			  	</ul>
-			</div>
-			<div class="nav-controllers">	
-				<a id="slider-arrow-left"><i class="icon-angle-left"></i></a>
-				<a id="slider-arrow-right"><i class="icon-angle-right"></i></a>
-			</div>
-		</div>	
-		<!--div class="error404">404</div>
-		<div class="heading-block nobottomborder">
-			<h4>Ooopps.! The Page you were looking for, couldn't be found.</h4>
-			<span>Try the search below to find matching pages:</span>
-		</div>
-		<form action="#" method="get" role="form" class="divcenter nobottommargin">
-			<div class="input-group input-group-lg">
-				<input type="text" class="form-control" placeholder="Search for Pages...">
-				<span class="input-group-btn">
-					<button class="btn btn-danger" type="button">Search</button>
-				</span>
-			</div>
-		</form-->	
-		<!--div class="slider-parallax swiper_wrapper full-screen clearfix">
-			<div class="slider-parallax-inner">		
-				<div class="swiper-container swiper-parent">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide" style="background-image: url('images/slider/boxed/2.jpg');">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-								</div>
-							</div>
-					  	</div>
-						<div class="swiper-slide" style="background-image: url('images/slider/boxed/3.jpg');">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-								</div>
-							</div>
-					  	</div>
-							<div class="swiper-slide" style="background-image: url('images/slider/boxed/4.jpg');">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-								</div>
-							</div>
-					  	</div>
-							<div class="swiper-slide" style="background-image: url('images/slider/boxed/5.jpg');">
-							<div class="container clearfix">
-								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
-								</div>
-							</div>
-					  	</div>
-					</div>
-					<div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
-					<div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
-				</div>
-			</div>
-		</div-->	
-	</div>	
-	<div class="video-wrap">
-		<!-- <img src="images/buildings/building1.jpg"/> -->
-		<video poster="images/buildings/building1.jpg" preload="auto" loop autoplay muted>
-			<!-- <source src='images/videos/explore.mp4' type='video/mp4' /> -->
-			<!-- <source src='images/videos/explore.webm' type='video/webm' /> -->
-			<source src='images/videos/semanggi.mp4' type='video/mp4' />
-			<source src='images/videos/semanggi.webm' type='video/webm' />
-		</video>
-		<div class="video-overlay" style="background-color: rgba(0,0,0,0.3);"></div>
-	</div>
-</section>
 
-<section id="content">
-	<div class="section notopmargin notopborder">
-		<div class="container clearfix">
-			<div class="heading-block center nomargin">
-			<h3>Latest from insider</h3>
-			</div>
-		</div>
-	</div>
-	<div class="container clear-bottommargin clearfix">
-		<div class="row">
-			<div class="col-md-3 col-sm-6 bottommargin">
-				<div class="ipost clearfix">
-					<div class="entry-image">
-						<a href="#"><img class="image_fade" src="images/magazine/thumb/1.jpg" alt="Image"></a>
-					</div>
-					<div class="entry-title">
-						<h3><a href="blog-single.html">Chinese Stocks Erase All Gains for the Year as Crackdown Deepens</a></h3>
-					</div>
-					<ul class="entry-meta clearfix">
-						<li><i class="icon-calendar3"></i> 13th April 2017</li>
-						<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 53</a></li>
-					</ul>
-					<div class="entry-content">
-						<p>Prevention effect, advocate dialogue rural development lifting people up community civil society. Catalyst, grantees leverage.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 bottommargin">
-				<div class="ipost clearfix">
-					<div class="entry-image">
-						<a href="#"><img class="image_fade" src="images/magazine/thumb/2.jpg" alt="Image"></a>
-					</div>
-					<div class="entry-title">
-						<h3><a href="blog-single.html">Samsung Rejects Holding Company as Profit Tops Estimates</a></h3>
-					</div>
-					<ul class="entry-meta clearfix">
-						<li><i class="icon-calendar3"></i> 24th Apr 2017</li>
-						<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 17</a></li>
-					</ul>
-					<div class="entry-content">
-						<p>Cross-agency coordination clean water rural, promising development turmoil inclusive education transformative community.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 bottommargin">
-				<div class="ipost clearfix">
-					<div class="entry-image">
-						<a href="#"><img class="image_fade" src="images/magazine/thumb/3.jpg" alt="Image"></a>
-					</div>
-					<div class="entry-title">
-						<h3><a href="blog-single.html">Hong Kong's Luxury Homes Are No Longer World's Most Expensive</a></h3>
-					</div>
-					<ul class="entry-meta clearfix">
-						<li><i class="icon-calendar3"></i> 26th Apr 2017</li>
-						<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 13</a></li>
-					</ul>
-					<div class="entry-content">
-						<p>Micro-finance; vaccines peaceful contribution citizens of change generosity. Measures design thinking accelerate progress medical initiative.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6 bottommargin">
-				<div class="ipost clearfix">
-					<div class="entry-image">
-						<a href="#"><img class="image_fade" src="images/magazine/thumb/4.jpg" alt="Image"></a>
-					</div>
-					<div class="entry-title">
-						<h3><a href="blog-single.html">Compassion conflict resolution, progressive; tackle</a></h3>
-					</div>
-					<ul class="entry-meta clearfix">
-						<li><i class="icon-calendar3"></i> 15th Jan 2014</li>
-						<li><a href="blog-single.html#comments"><i class="icon-comments"></i> 54</a></li>
-					</ul>
-					<div class="entry-content">
-						<p>Community health workers best practices, effectiveness meaningful work The Elders fairness. Our ambitions local solutions globalization.</p>
-					</div>
-				</div>
-			</div>
+/*
+ *---------------------------------------------------------------
+ * APPLICATION ENVIRONMENT
+ *---------------------------------------------------------------
+ *
+ * You can load different configurations depending on your
+ * current environment. Setting the environment also influences
+ * things like logging and error reporting.
+ *
+ * This can be set to anything, but default usage is:
+ *
+ *     development
+ *     testing
+ *     production
+ *
+ * NOTE: If you change these, also change the error_reporting() code below
+ *
+ */
+    define('ENVIRONMENT', 'development');
+    // Set Server Timezone
+    ini_set('date.timezone','Asia/Jakarta');
+/*
+ *---------------------------------------------------------------
+ * ERROR REPORTING
+ *---------------------------------------------------------------
+ *
+ * Different environments will require different levels of error reporting.
+ * By default development will show errors but testing and live will hide them.
+ */
+if (defined('ENVIRONMENT'))
+{
+    switch (ENVIRONMENT)
+    {
+	case 'development':
+		error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING); //error_reporting(E_ALL); /* Original Setting */
+	break;
 
-		</div>
-	</div>
-</section>
-<?php
-include('inc_footer.php');
-?>
+	case 'testing':
+	case 'production':
+		error_reporting(0);
+	break;
+
+	default:
+		exit('The application environment is not set correctly.');
+    }
+}
+
+/*
+ *---------------------------------------------------------------
+ * SYSTEM FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * This variable must contain the name of your "system" folder.
+ * Include the path if the folder is not in the same  directory
+ * as this file.
+ *
+ */
+    $system_path = 'system';
+
+/*
+ *---------------------------------------------------------------
+ * APPLICATION FOLDER NAME
+ *---------------------------------------------------------------
+ *
+ * If you want this front controller to use a different "application"
+ * folder then the default one you can set its name here. The folder
+ * can also be renamed or relocated anywhere on your server.  If
+ * you do, use a full server path. For more info please see the user guide:
+ * http://codeigniter.com/user_guide/general/managing_apps.html
+ *
+ * NO TRAILING SLASH!
+ *
+ */
+    $application_folder = 'application';
+
+/*
+ * --------------------------------------------------------------------
+ * DEFAULT CONTROLLER
+ * --------------------------------------------------------------------
+ *
+ * Normally you will set your default controller in the routes.php file.
+ * You can, however, force a custom routing by hard-coding a
+ * specific controller class/function here.  For most applications, you
+ * WILL NOT set your routing here, but it's an option for those
+ * special instances where you might want to override the standard
+ * routing in a specific front controller that shares a common CI installation.
+ *
+ * IMPORTANT:  If you set the routing here, NO OTHER controller will be
+ * callable. In essence, this preference limits your application to ONE
+ * specific controller.  Leave the function name blank if you need
+ * to call functions dynamically via the URI.
+ *
+ * Un-comment the $routing array below to use this feature
+ *
+ */
+    // The directory name, relative to the "controllers" folder.  Leave blank
+    // if your controller is not in a sub-folder within the "controllers" folder
+    // $routing['directory'] = '';
+
+    // The controller class file name.  Example:  Mycontroller
+    // $routing['controller'] = '';
+
+    // The controller function you wish to be called.
+    // $routing['function']	= '';
+
+
+/*
+ * -------------------------------------------------------------------
+ *  CUSTOM CONFIG VALUES
+ * -------------------------------------------------------------------
+ *
+ * The $assign_to_config array below will be passed dynamically to the
+ * config class when initialized. This allows you to set custom config
+ * items or override any default config values found in the config.php file.
+ * This can be handy as it permits you to share one application between
+ * multiple front controller files, with each file containing different
+ * config values.
+ *
+ * Un-comment the $assign_to_config array below to use this feature
+ *
+ */
+    // $assign_to_config['name_of_config_item'] = 'value of config item';
+
+// --------------------------------------------------------------------
+// END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
+// --------------------------------------------------------------------
+
+/*
+ * ---------------------------------------------------------------
+ *  Resolve the system path for increased reliability
+ * ---------------------------------------------------------------
+ */
+
+    // Set the current directory correctly for CLI requests
+    if (defined('STDIN'))
+    {
+	chdir(dirname(__FILE__));
+    }
+
+    if (realpath($system_path) !== FALSE)
+    {
+	$system_path = realpath($system_path).'/';
+    }
+
+    // ensure there's a trailing slash
+    $system_path = rtrim($system_path, '/').'/';
+
+    // Is the system path correct?
+    if ( ! is_dir($system_path))
+    {
+	exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
+    }
+
+/*
+ * -------------------------------------------------------------------
+ *  Now that we know the path, set the main path constants
+ * -------------------------------------------------------------------
+ */
+    // The name of THIS file
+    define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+
+    // The PHP file extension
+    // this global constant is deprecated.
+    define('EXT', '.php');
+
+    // Path to the system folder
+    define('BASEPATH', str_replace("\\", "/", $system_path));
+
+    // Path to the front controller (this file)
+    define('FCPATH', str_replace(SELF, '', __FILE__));
+
+    // Name of the "system folder"
+    define('SYSDIR', trim(strrchr(trim(BASEPATH, '/'), '/'), '/'));
+
+
+    // The path to the "application" folder
+    if (is_dir($application_folder))
+    {
+	define('APPPATH', $application_folder.'/');
+    }
+    else
+    {
+	if ( ! is_dir(BASEPATH.$application_folder.'/'))
+	{
+		exit("Your application folder path does not appear to be set correctly. Please open the following file and correct this: ".SELF);
+	}
+
+	define('APPPATH', BASEPATH.$application_folder.'/');
+    }
+
+/*
+ * --------------------------------------------------------------------
+ * LOAD THE BOOTSTRAP FILE
+ * --------------------------------------------------------------------
+ *
+ * And away we go...
+ *
+ */
+require_once BASEPATH.'core/CodeIgniter.php';
+
+/* End of file index.php */
+/* Location: ./index.php */
