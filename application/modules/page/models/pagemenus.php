@@ -83,7 +83,7 @@ class PageMenus Extends MY_Model {
 		return $this->db->table_exists($this->table);
 
 	}
-	public function getCount($status = null){
+	public function getCount($status = null) {
 		$data = array();
 		$options = array('status' => $status);
 		$this->db->where($options,1);
@@ -92,7 +92,7 @@ class PageMenus Extends MY_Model {
 		return $data;
 	}
 
-	public function getPageMenu($id = null){
+	public function getPageMenu($id = null) {
 		if(!empty($id)){
 			$data = array();
 			$options = array('id' => $id);
@@ -106,7 +106,7 @@ class PageMenus Extends MY_Model {
 		}
 	}
 
-	public function getMenu($menu=null){
+	public function getMenu($menu=null) {
 		if(!empty($menu)){
 			$data = array();
 			$options = array('subject' => $menu,'status' => 'publish');
@@ -120,7 +120,7 @@ class PageMenus Extends MY_Model {
 		}
 	}
 
-	public function getMenuByUrl($url=null){
+	public function getMenuByUrl($url=null) {
 		if(!empty($url)){
 			$data = array();
 			$options = array('url' => $url,'status' => 'publish');
@@ -134,7 +134,7 @@ class PageMenus Extends MY_Model {
 		}
 	}
 
-	public function getPagesByMenu($menu = null){
+	public function getPagesByMenu($menu = null) {
 		if(!empty($menu)){
 			$_menu = self::getMenu($menu);
 			$data = array();
@@ -148,7 +148,7 @@ class PageMenus Extends MY_Model {
 		}
 	}
 
-	public function getAllPageMenu($admin=null){
+	public function getAllPageMenu($admin=null) {
 		$data = array();
 		$this->db->order_by('added');
 		$Q = $this->db->get('page_menus');
@@ -162,12 +162,38 @@ class PageMenus Extends MY_Model {
 		return $data;
 	}
 
-	public function getPagesGroupByType(){
+	public function getPagesGroupByType() {
 
 		$_menu = self::with('pages')->findAll(['status'=>'publish','position'=>'top','url !='=>'home'],'*',['priority'=>'asc','type'=>'asc']);
 		$data = [];
 		foreach($_menu as $menu) {
 			$data[$menu->type][] = $menu;
+		}
+
+		return $data;
+
+	}
+
+	public function getPageMenusInTop() {
+
+		//$_menu = self::with('pages')->findAll(['status'=>'publish','position'=>'top_bottom','position'=>'top'],'*',['priority'=>'asc']);
+		$_menu = self::executeQuery("SELECT * from {$this->table} WHERE status = 'publish' AND position IN ('top','top_bottom') ORDER BY priority ASC;")->result_object();
+		$data = [];
+		foreach($_menu as $menu) {
+			$data[] = $menu;
+			$menu->pages = self::executeQuery("SELECT * from tbl_pages WHERE status = 'publish' AND menu_id ='{$menu->id}';")->result_object();
+ 		}
+		return $data;
+
+	}
+
+	public function getPageMenusInBottom() {
+
+		//$_menu = self::findAll(['status'=>'publish','position'=>'top_bottom','position'=>'bottom'],'*',['priority'=>'asc']);
+		$_menu = self::executeQuery("SELECT * from {$this->table} WHERE status = 'publish' AND position IN ('bottom') ORDER BY priority ASC;")->result_object();
+		$data = [];
+		foreach($_menu as $menu) {
+			$data[] = $menu;
 		}
 
 		return $data;

@@ -360,11 +360,11 @@ $config['rewrite_short_tags'] = TRUE;
 $config['proxy_ips'] = '';
 
 // Website name
-$config['development_name']	= 'SUZUKI INDONESIA';
+$config['development_name']	= 'Simpang Susun SEMANGGI';
 
 // Developers Name and website
-$config['developer_name']	= 'DENTSU DIGITAL';
-$config['developer_url']	= 'http://dentsu.digital/';
+$config['developer_name']	= 'SSS';
+$config['developer_url']	= 'http://';
 
 // TRUE for site is open or FALSE for maintenance mode
 $config['site_open']		= TRUE;

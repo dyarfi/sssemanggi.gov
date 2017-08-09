@@ -53,22 +53,16 @@ class Public_Controller extends MY_Controller {
 
 		$this->lang->load( array('form_validation','date','label','name','email','upload','module'));
 
-		// Set csrf to true
-		// $this->config->set_item('csrf_protection', true); // Get config from database and set to config
-
 		// Load site models
 		$this->load->model('admin/Configurations');
 		$this->load->model('admin/Settings');
-		$this->load->model('admin/ServerLogs');
+		//$this->load->model('admin/ServerLogs');
 		$this->load->model('admin/Languages');
 		$this->load->model('Captcha');
 		$this->load->model('region/Provinces');
 		// Set site Page Menus Model
 		$this->load->model('page/PageGroups');
 		$this->load->model('page/PageMenus');
-		$this->load->model('page/PageSocmeds');
-		// Set site Page Model
-		$this->load->model('product/Products');
 		// Set site Page Model
 		$this->load->model('page/Pages');
 		// Set site Page Templates
@@ -106,28 +100,13 @@ class Public_Controller extends MY_Controller {
 
         // Set Language list
 		$this->languages		= $this->Languages->getAllLanguage(['status'=>'1']);
-
-		// Set menu groups
-		$this->menu_groups		= $this->PageGroups->getAllMenuByGroups();
-
-        // Set menus
-		$this->menus       		= $this->PageMenus->getPagesGroupByType();
-
-		// Set social media menus
-		$this->socials       	= array_filter($this->PageSocmeds->getSocmedsByType());
-
-		// Set pages on corporate
-        $this->corporates		= $this->Pages->get_many_by(['status'=>'publish','menu_id'=>25]);
-
- 		// Set pages on marines
-        $this->products			= $this->PageMenus->get_many_by(['status'=>'publish','type'=>'product', 'name !='=>'pricelist']);
-
-		// Set automobiles
-        $this->automobiles		= $this->Products->findAll(['status'=>'publish','type'=>'automobile'],'subject',['subject'=>'ASC']);
-
-		// Set pages on marines
-        $this->provinces		= $this->Provinces->getAllProvince();
-
+		
+        // Set menus top
+		$this->menus       		= $this->PageMenus->getPageMenusInTop();
+		
+		// Set menus bottom
+		$this->menus_bottom     = $this->PageMenus->getPageMenusInBottom();
+		
         // Set member from sessions
         $this->member			= $this->session->userdata('member_session');
 
@@ -135,10 +114,7 @@ class Public_Controller extends MY_Controller {
         $this->captcha 			= $this->Captcha->image();
 
 		// Set chat mode
-		$this->chat				= $this->Configurations->getConfiguration_ByParam('chat');
-
-		// Set menus
-		//$this->menus_bottom	= $this->Content->find('page_menus',['url !='=>'home','type !='=>'','position IN'=>['bottom','top_bottom'],'status'=>'publish'],['id'=>'asc'],15);
+		// $this->chat				= $this->Configurations->getConfiguration_ByParam('chat');
 
         // Set social media links
         $this->twitter     = $this->Settings->getByParameter('socmed_twitter');
@@ -155,9 +131,6 @@ class Public_Controller extends MY_Controller {
         $this->contactus_address = $this->Settings->getByParameter('contactus_address');
         $this->site_video = @$this->Settings->getByParameter('site_video_url');
         $this->site_video_cover = @$this->Settings->getByParameter('site_video_cover');
-
-		// Google map parse array
-		parse_str(parse_url($this->gmap->value,PHP_URL_QUERY),$this->map);
 
     }
 
@@ -215,7 +188,7 @@ class Public_Controller extends MY_Controller {
 		}
 
 		// Set value for ServerLogs
-		$this->ServerLogs->setServerLog($object);
+		//$this->ServerLogs->setServerLog($object);
 	}
 
 }

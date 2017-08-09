@@ -19,7 +19,7 @@ class Site_Home extends Public_Controller {
 	public function index() {
         
 		// Set site title page with module menu
-		$data['page_title'] = 'Suzuki Indonesia';
+		$data['page_title'] = 'Simpang Susun Semanggi';
 		
 		// Set facebook link data
 		$data['facebook']	= $this->Settings->getByParameter('socmed_facebook');
@@ -52,7 +52,7 @@ class Site_Home extends Public_Controller {
 		$data['main'] = 'home';
 		
 		// Load site template
-		$this->load->view('template/public/template_home', $this->load->vars($data));		
+		$this->load->view('template/public/template', $this->load->vars($data));		
 		
 	}
 	
